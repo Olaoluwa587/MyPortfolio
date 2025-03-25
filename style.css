@@ -105,7 +105,7 @@ section {
     
 }
 .home-content{
-    margin-left: 5rem;
+    margin-left: 11rem;
 }
 .home-content h3{
     font-size: 3.7rem;
@@ -193,7 +193,7 @@ span{
 .about-content{
     padding: 0 4rem;
     position: relative;
-    top: -20rem;
+    top: -15rem;
 }
 .about-content h2{
     text-align: left;
@@ -250,3 +250,213 @@ span{
     font-size: 2.6rem;
 }
 /* Testimonial Code */
+
+
+/* Contact Section Code */
+.contact{
+    background: var(--bg-color);
+}
+.contact .heading{
+    text-align: center;
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: var(--main-color);
+}
+.contact form{
+    max-width: 80rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input, .contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 0.25rem solid var(--main-color);
+    margin: 0.7rem 0;
+    resize: none;
+}
+.contact form .input-box input{
+    width: 49%;
+    margin: 0.7rem 0.35rem;
+}
+.contact form .btn{
+    margin-top: 2rem;
+}
+/* Footer Section Code */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--snd-bg-color);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+.footer .social a{
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.footer .copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* RESPOINSIVE DESIGN CODE */
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3%;
+    }
+    .services{
+        padding: 7rem;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media (max-width: 991px){
+  #menu-icon{
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 255px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-color);
+    transition: all 0.5s ease;
+    backdrop-filter: blur(10px);
+  }
+  .navbar a{
+    display: block;
+    padding: 17px;
+    font-size: 22px;
+  }
+  .navbar.active{
+    display: block;
+    right: 0;
+
+  }
+  .home{
+    flex-direction: column;
+  }
+  .home-content h3{
+    font-size: 2.6rem;
+  }
+  .home-content h1{
+    font-size: 5rem;
+  }
+  .home-content{
+    order: 2;
+    margin-left: 1rem;
+  }
+  .home-img img{
+    width: 70vw;
+    height: 120vh;
+    margin-top: 4rem;
+  }
+  .about{
+    flex-direction: column-reverse;
+  }
+  .about-img img{
+    width: 30vw;
+    margin-top: 3rem;
+    /* border-radius: 5%; */
+  }
+  .about-content{
+    margin-bottom: 15%;
+  }
+  .services h2{
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width:617px){
+    .home-img img{
+        width: 70vw;
+        height: 90vh;
+        margin-top: 8rem;
+    }
+    .about-img img{
+        width: 50vw;
+        margin-bottom: 4rem;
+        transform: translateY(-80px);
+    }
+    .about-content{
+        transform: translateY(-80px);
+        margin-left: 1.5rem;    
+      }
+      .about-content p{
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        width: 500px;
+      }
+}
+@media (max-width:617px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+    .home-img img {
+        width: 80vw;
+    }
+    .about-content {
+        padding: 0 2rem;
+    }
+    .services-box {
+        width: 95%;
+        padding: 4rem 2rem;
+    }
+}
